@@ -1,0 +1,115 @@
+form{
+  margin: 35px 0;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  max-height: 60px;
+  border-radius: 16px;
+background: rgba(255, 255, 255, 0.30);
+box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.10);
+backdrop-filter: blur(10px);
+}
+input{
+  color: #999;
+font-size: 18px;
+font-weight: 400;
+
+  border: none;
+  outline: none;
+  background: none;
+}
+button{
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px 9px 6px; 
+  border-radius: 26843500px;
+background: rgba(255, 255, 255, 0.20);  
+}
+
+
+h1{
+  color: #FFF;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+}
+h2{
+  color: #FFF;
+text-align: center;
+font-size: 30px;
+font-style: normal;
+font-weight: 300;
+}
+h3{
+  color: #FFF;
+text-align: center;
+font-size: 72px;
+font-style: normal;
+font-weight: 100;
+}
+h3 span{
+font-size: 36px;
+}
+h4{
+  color: #FFF;
+text-align: center;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+text-transform: capitalize;
+}
+h5{
+  color: #FFF;
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+}
+.weatherEmoji{
+  font-size: 96px;
+  text-align: center;
+}
+
+.weather_result {
+
+}
+.weatherData {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 16px;
+
+}
+.dataInfo {
+  width: 192px;
+height: 124px;
+box-sizing: border-box;
+    border-radius: 24px;
+background: rgba(255, 255, 255, 0.20);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.10);
+backdrop-filter: blur(10px);
+padding: 24px;
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+.data_tittle {
+  margin-bottom: 31px;
+  display: flex;
+}
+.data_tittle span{
+  margin-right: 50px;
+}
+.data_value {
+  color: #FFF;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+text-align: left;
+}
