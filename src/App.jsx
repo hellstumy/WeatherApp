@@ -40,7 +40,8 @@
     return (
       <>
         <div className="container">
-          <h1 className='title'>WeatherApp</h1>
+            <h1>WeatherApp</h1>
+
           <form onSubmit={handleSearch} action="search">
             <input name="cityInput" type="text" placeholder='Search city...' />
             <button type="submit">🔍</button>
@@ -48,7 +49,18 @@
           <div className="weather_result">
             <h2>{weather.name}</h2>
             <h5>Today</h5>
-            <h3 className="weatherEmoji">☀️</h3>
+            <h3 className="weatherEmoji">
+              { 
+                weather.weather[0].main === "Clouds" ? "🌥️" :
+                weather.weather[0].main === "Clear" ? "☀️" :
+                weather.weather[0].main === "Rain" ? "🌧️" :
+                weather.weather[0].main === "Drizzle" ? "🌦️" :
+                weather.weather[0].main === "Mist" ? "🌁" :
+                weather.weather[0].main === "Snow" ? "❄️" :
+                ""
+              }
+            </h3>  
+
             <h3>{temp}<span>°C</span></h3>
             <h4>{weather.weather[0].description}</h4>
             <div className="weatherData">
